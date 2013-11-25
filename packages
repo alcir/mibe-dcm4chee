@@ -1,0 +1,15 @@
+# List packages to add to your image one per line.
+dtracetools
+htop
+sun-jdk6
+scmgit
+hg-git
+percona-client
+percona-server
+percona-xtrabackup
+p5-DBD-percona55
+percona-toolkit
+quickbackup-percona
+innotop
+mytop
+unzip

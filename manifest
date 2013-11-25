@@ -1,0 +1,7 @@
+name="dcm4chee"
+organization="FTGM"
+brand="SmartOS"
+version="1.0.11"
+description="A dcm4chee installation"
+homepage="http://dcm4che.org/"
+users="root dcm4chee"
