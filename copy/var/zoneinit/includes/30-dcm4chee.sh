@@ -31,3 +31,5 @@ rm -rf /var/tmp/dcm4che-3.2.1.tar.gz
 
 log "install dcmtk"
 pkg_add /var/tmp/dcmtk-3.6.0.tgz
+
+rm -rf /var/tmp/dcmtk-3.6.0.tgz
