@@ -25,7 +25,7 @@ rm -rf /var/tmp/dcm4chee-2.17.3-mysql.tar.gz
 log "unpack dcm4che3 tools"
 mkdir /opt/dcmtools
 tar -C /opt/dcmtools -xzf /var/tmp/dcm4che-3.2.1.tar.gz
-ln -s /opt/dcmtools/dcm4che3 /opt/dcmtools/dcm4che-3.2.1
+ln -s /opt/dcmtools/dcm4che-3.2.1 /opt/dcmtools/dcm4che3
 
 rm -rf /var/tmp/dcm4che-3.2.1.tar.gz
 
