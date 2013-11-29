@@ -1,3 +1,8 @@
+# it is important to have a working /etc/hosts file
+
+echo "127.0.0.1  localhost loghost" > /etc/hosts
+echo "${PUBLIC_IP} ${HOSTNAME}.${DOMAINNAME} ${HOSTNAME}" >> /etc/hosts
+
 # Unpack dcm4chee installation 
 # make link and chown
 
