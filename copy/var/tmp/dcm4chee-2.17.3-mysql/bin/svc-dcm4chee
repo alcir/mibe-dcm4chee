@@ -1,0 +1,33 @@
+#!/usr/bin/sh
+#        William Pool (Puddle) 01/05
+#        SMF Method file for JBoss
+#        E-mail: puddle@flipmotion.com
+# dcm4chee adaptation Paolo Marcheschi: paolo@ifc.cnr.it 
+# a user dcm4chee must be created
+# /lib/svc/method/svc-dcm4chee
+
+. /lib/svc/share/smf_include.sh
+
+case $1 in
+'start')
+        echo "starting dcm4chee"
+        su  dcm4chee -c '/export/dcm4chee/bin/run.sh -b 0.0.0.0 & >/dev/null 2> /dev/null'
+        ;;
+'stop')
+        echo "stopping dcm4chee.."
+         su  dcm4chee -c '/export/dcm4chee/bin/shutdown.sh -S &'
+         su  dcm4chee -c 'pkill java'
+        ;;
+'restart')        
+        echo "restarting dcm4chee"
+	stop
+        sleep 35
+        pkill java
+        start
+        ;;
+*)
+        echo "Usage: $0 { start | stop | restart }"
+        exit 1
+        ;;
+esac
+
