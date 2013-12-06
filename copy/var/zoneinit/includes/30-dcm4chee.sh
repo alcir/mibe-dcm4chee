@@ -38,3 +38,10 @@ log "install dcmtk"
 pkg_add /var/tmp/dcmtk-3.6.0.tgz
 
 rm -rf /var/tmp/dcmtk-3.6.0.tgz
+
+# Tmp dir for dcm4chee java
+
+log "creating /var/tmp/dcm4chee"
+
+mkdir /var/tmp/dcm4chee
+chown dcm4chee /var/tmp/dcm4chee

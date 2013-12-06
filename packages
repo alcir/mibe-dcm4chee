@@ -4,10 +4,10 @@ htop
 sun-jdk6
 scmgit
 hg-git
+p5-DBD-percona55
 percona-client
 percona-server
 percona-xtrabackup
-p5-DBD-percona55
 percona-toolkit
 quickbackup-percona
 innotop
